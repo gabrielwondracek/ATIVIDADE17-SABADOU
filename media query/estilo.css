@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: row;
+}
+
+.card {
+    margin: 15px;
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+    animation: cor infinite alternate 2s;
+
+}
+
+@keyframes cor {
+    0%{ background-color: #333;}
+    25%{background-color: #2b0a0a;}
+    50%{background-color: #24041c;}
+    75%{background-color: #0a2b1b;}
+    100%{background-color: #0c0424;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+body{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: column;
+}
+}
